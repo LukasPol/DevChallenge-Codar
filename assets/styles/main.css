@@ -3,8 +3,9 @@
 /* General */
 :root {
   --primary-color: #D6000D;
-  --black: #000;
+  --black: #1a1a1a;
   --white: #fff;
+  --grey: #ccc;
 }
 
 * {
@@ -121,9 +122,10 @@ section.info div.contact form {
 
 section.info div.contact form input {
   padding: 14px;
-  background-color: #dcdcd8;
+  background-color: var(--grey);
   border: none;
   border-radius: 8px;
+  font-weight: 500;
 }
 
 section.info div.contact form button {
@@ -146,7 +148,7 @@ section.testimonies {
 
 .card-group .card {
   font-size: 14px;
-  background-color: #dcdcd8;
+  background-color: var(--grey);
   border-radius: 8px;
   padding: 20px;
 
@@ -202,5 +204,22 @@ footer .network div {
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
 
+/* For animation */
+.animate-left {
+  opacity: 0;
+  transform: translate3d(-50%, 0, 0);
+  transition: .4s;
+}
+
+.animate-right {
+  opacity: 0;
+  transform: translate3d(+10%, 0, 0);
+  transition: .4s;
+}
+
+.animate-start {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
