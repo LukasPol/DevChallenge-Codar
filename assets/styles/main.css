@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* General */
+:root {
+  --primary-color: #D6000D;
+  --black: #000;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black)
+}
+
+.button {
+  font-weight: 500;
+  color: var(--white);
+  background-color: var(--primary-color);
+  padding: 8px 38px;
+  border-radius: 8px;
+  transition: filter 0.2s;
+}
+
+.button:hover {
+  filter: brightness(90%);
+}
+
+/* Header */
+header nav {
+  padding: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a.logo {
+  color: var(--primary-color);
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+header nav a.logo span {
+  color: var(--black);
+}
+
+nav .navbar .nav-item {
+  list-style: none;
+  float: left;
+  margin-right: 24px;
+}
+
+/* First Section */
+section.budget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; 
+}
+
+section.budget img {
+  width: 30vw;
+  margin-right: 15vw;
+}
+
+section.budget div p {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+section.budget div h1 {
+  font-size: 38px;
+  color: var(--primary-color);
+  margin-bottom: 28px;
+}
+
+/* Second Section */
+section.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+}
+
+section.info div.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+section.info div.about ul li.info-item {
+  list-style-image: url('../images/check-circle.svg');
+}
+
+section.info div.about ul li.info-item span {
+  position: relative;
+  top: -7px;
+}
+
+section.info div.about img {
+  width: 33vw;
+  margin-left: 15vw;
+}
+
+section.info div.contact form {
+  margin-top: 10px;
+}
+
+section.info div.contact form input {
+  padding: 14px;
+  background-color: #dcdcd8;
+  border: none;
+  border-radius: 8px;
+}
+
+section.info div.contact form button {
+  border: none;
+  padding: 13px 38px;
+  font-size: 16px;
+}
+
+/* Third Section */
+section.testimonies {
+  height: 50vh;
+  padding: 0 7%;
+}
+
+.card-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5vw;
+}
+
+.card-group .card {
+  font-size: 14px;
+  background-color: #dcdcd8;
+  border-radius: 8px;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+.card-group .card img.card-img-left {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
+}
+
+.card-group .card .card-body h4 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.card-group .card .card-body span {
+  font-weight: 700;
+}
+
+
+/* Footer */
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 30px;
+
+  display: grid;
+  grid-template-columns: 23vw 23vw 23vw 23vw;
+  justify-content: space-between;
+}
+
+footer .logo {
+  color: var(--white);
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+footer p {
+  margin: 20px 0;
+}
+
+footer p a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+footer .network div {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
