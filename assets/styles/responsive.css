@@ -1,0 +1,90 @@
+@media (max-width: 900px) {
+  /* Header */
+  header nav {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  header nav .navbar {
+    margin: 20px 0;
+  }
+
+  header nav .navbar .nav-item:first-child {
+    margin-left: 0;
+  }
+
+  header nav .navbar .nav-item:last-child {
+    display: none;
+  }
+
+  /* First Section */
+  section.budget {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  
+  section.budget img {
+    width: 70vw;
+    max-width: 350px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  section.budget div {
+    text-align: center;
+  }
+
+  /* Second Section */
+  section.info {
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  section.info div.about {
+    flex-direction: column-reverse;
+  }
+
+  section.info div.about img {
+    width: 70vw;
+    max-width: 350px;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  section.info div.about ul li.info-item {
+    margin-bottom: 10px;
+  }
+
+  section.info div.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Third Section */
+  section.testimonies {
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .card-group {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  /* Footer */
+  footer { 
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer div:first-child {
+    text-align: center;
+  }
+
+  footer div p {
+    margin: 15px 0;
+  }
+}

@@ -59,7 +59,7 @@ header nav a.logo span {
 nav .navbar .nav-item {
   list-style: none;
   float: left;
-  margin-right: 24px;
+  margin-left: 24px;
 }
 
 /* First Section */
